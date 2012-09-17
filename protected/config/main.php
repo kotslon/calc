@@ -30,6 +30,8 @@ return array(
 		
 		'exmpl',
 		
+		'calc',
+		
 	),
 
 	// application components
