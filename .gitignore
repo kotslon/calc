@@ -1,4 +1,5 @@
 #ignore Eclipse IDE settings
 .settings/
 .project
+.buildpath
 .pydevproject
