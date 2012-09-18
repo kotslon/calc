@@ -6,4 +6,5 @@
 
 #local settings files
 protected/config/local.php
+protected/config/local_console.php
 yii_path.php
