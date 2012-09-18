@@ -1,6 +1,8 @@
 <?php
 /* @var $this DefaultController */
-
+Yii::app()->clientScript->registerScriptFile(
+		   Yii::app()->baseUrl.'/js/jquery.js'
+		);
 Yii::app()->clientScript->registerScriptFile(
 		   Yii::app()->baseUrl.'/js/calc.js'
 		);
