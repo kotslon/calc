@@ -3,3 +3,7 @@
 .project
 .buildpath
 .pydevproject
+
+#local settings files
+protected/config/local.php
+yii_path.php

@@ -1,9 +1,23 @@
 <?php
 
 // change the following paths if necessary
-$yii=dirname(__FILE__).'/../../../../var/www/yii/framework/yii.php';
-$config=dirname(__FILE__).'/protected/config/main.php';
-
+// yii_path.php is ignored by VCS
+$local_yii=dirname(__FILE__).DIRECTORY_SEPARATOR.'yii_path.php';
+if (file_exists($local_yii)) {
+	require_once($local_yii);
+} else {
+	$yii=dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR
+		 .'framework'.DIRECTORY_SEPARATOR.'yii.php';
+}
+// local.php is ignored by VCS
+$local_config=dirname(__FILE__).DIRECTORY_SEPARATOR.'protected'
+		.DIRECTORY_SEPARATOR.'config'.DIRECTORY_SEPARATOR.'local.php';
+if (file_exists($local_config)){
+	$config=$local_config;
+} else {
+	$config=dirname(__FILE__).DIRECTORY_SEPARATOR.'protected'
+			.DIRECTORY_SEPARATOR.'config'.DIRECTORY_SEPARATOR.'main.php';
+}
 // remove the following lines when in production mode
 defined('YII_DEBUG') or define('YII_DEBUG',true);
 // specify how many levels of call stack should be shown in each log message
