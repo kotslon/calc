@@ -17,15 +17,15 @@ Yii::app()->clientScript->registerScriptFile(
 		Yii::app()->baseUrl.'/js/bootstrap.js'
 );
 ?>
-
+<!-- 
 <h1>Calc here.</h1>
 <button type="button" onclick="helloDiletant();">Hello?</button>
 <br/><br/><br/>
-
+ -->
 	<script src="js/bootstrap.js"></script>
 	
 	
-	<div class="navbar span12 offset2" >
+	<div class="navbar span12 offset2" style="margin: 0px; margin-top: 0px; padding: 0px" >
 		<div class="navbar-inner">
 			<div class="nav-collapse">
 				<a class="brand" href="#">Calculator</a>
@@ -42,43 +42,44 @@ Yii::app()->clientScript->registerScriptFile(
 
 <!--  style="padding-left:130px"-->
 
-	<div class="conteiner span12 offset2" >
+	<div class="conteiner span12 offset2" style="margin: 0px; margin-top: 15px; padding: 0px;" >
 		<div class="row-fluid" style="margin: 0px; padding: 0px" >
 			<div class="span8 " style="margin: 0px; padding: 0px">
 				<div class="input-append" style="margin: 0px; padding: 0px">
 					<input class="span8" readonly id="appendedInputButton" style="width: 88%; background-color: #ffffff" size= "116" type="text">
-						<button class="btn btn-warning" type="button" >Twitter</button>
+						<button class="btn btn-warning" type="button" id="ButtonTwit" onClick="calcPress('ButtonTwit')">Twitter</button>
 					
 					<div class="conteiner-fluid" style="margin: 0px; padding: 0px">
-							<div class="well span12" style="margin: 0px; padding: 0px">
-								<div class="span3"><button class="btn" style="width: 100%; line-height: 40px">C</button></div>
-								<div class="span6"><button>1</button></div>
-								<div class="span3"><button class="btn" style="width: 100%; line-height: 40px">Bck</button></div>
+							<div class="span12" style="margin: 0px; padding: 0px">
+								<div class="span3" style="margin: 0px; padding: 0px; margin-top: 5px;"><button class="btn" id="ButtonC" onClick="calcPress('ButtonC')" style="width: 100%; line-height: 40px">C</button></div>
+								<div class="span6" style="margin: 0px; padding: 0px; margin-top: 5px;"><h5 style="text-align: center">Diletant Club<br/> web development by newbies</h5></div>
+								<div class="span3" style="margin: 0px; padding: 0px; margin-top: 5px;"><button class="btn" id="ButtonBcsp" onClick="calcPress('ButtonBcsp')" style="width: 100%; line-height: 40px">Bck</button></div>
 							</div>
 														
-							<div class=" well span8" style="margin: 0px; padding: 0px">
-								<div class=" span4"><button class="btn" style="width: 100%; line-height: 40px; margin-top: 5px">7</button></div>
-								<div class=" span4"><button class="btn" style="width: 100%; line-height: 40px; margin-top: 5px">8</button></div>
-								<div class=" span4"><button class="btn" style="width: 100%; line-height: 40px; margin-top: 5px">9</button></div>
+							<div class=" span8" style="margin: 0px; padding: 0px">
+								<div class=" span4" style="margin: 0px; padding: 0px; margin-top: 5px;"><button class="btn" id="Button7" onClick="calcPress('Button7')" style="width: 100%; line-height: 45px;">7</button></div>
+								<div class=" span4" style="margin-left: 5px; padding: 0px; margin-top: 5px;"><button class="btn" id="Button8" onClick="calcPress('Button8')" style="width: 100%; line-height: 45px;">8</button></div>
+								<div class=" span4" style="margin-left: 5px; padding: 0px; margin-top: 5px;"><button class="btn" id="Button9" onClick="calcPress('Button9')" style="width: 100%; line-height: 45px;">9</button></div>
 																
-								<div class=" span4" style="margin-left: 0px"><button class="btn" style="width: 100%; line-height: 40px; margin-top: 5px">4</button></div>
-								<div class=" span4"><button class="btn" style="width: 100%; line-height: 40px; margin-top: 5px">5</button></div>
-								<div class=" span4"><button class="btn" style="width: 100%; line-height: 40px; margin-top: 5px">6</button></div>
+								<div class=" span4" style="margin: 0px; padding: 0px; margin-top: 5px;"><button class="btn" style="width: 100%; line-height: 45px;">4</button></div>
+								<div class=" span4" style="margin-left: 5px; padding: 0px; margin-top: 5px;"><button class="btn" style="width: 100%; line-height: 45px;">5</button></div>
+								<div class=" span4" style="margin-left: 5px; padding: 0px; margin-top: 5px;"><button class="btn" style="width: 100%; line-height: 45px;">6</button></div>
 								
-								<div class=" span4" style="margin: 0px; padding: 0px"><button class="btn" style="width: 100%; line-height: 40px; margin-top: 5px">1</button></div>
-								<div class=" span4"><button class="btn" style="width: 100%; line-height: 40px; margin-top: 5px">2</button></div>
-								<div class=" span4"><button class="btn" style="width: 100%; line-height: 40px; margin-top: 5px">3</button></div>
-								<div class=" span4" style="margin-left: 0px"><button class="btn" style="width: 100%; line-height: 40px; margin-top: 5px">0</button></div>
-								<div class=" span4"><button class="btn" style="width: 100%; line-height: 40px; margin-top: 5px">00</button></div>
-								<div class=" span4"><button class="btn" style="width: 100%; line-height: 40px; margin-top: 5px">.</button></div>	
+								<div class=" span4" style="margin: 0px; padding: 0px; margin-top: 5px;"><button class="btn" style="width: 100%; line-height: 45px;">1</button></div>
+								<div class=" span4" style="margin-left: 5px; padding: 0px; margin-top: 5px;"><button class="btn" style="width: 100%; line-height: 45px;">2</button></div>
+								<div class=" span4" style="margin-left: 5px; padding: 0px; margin-top: 5px;"><button class="btn" style="width: 100%; line-height: 45px;">3</button></div>
+								
+								<div class=" span4" style="margin: 0px; padding: 0px; margin-top: 5px;"><button class="btn" style="width: 100%; line-height: 45px;">0</button></div>
+								<div class=" span4" style="margin-left: 5px; padding: 0px; margin-top: 5px;"><button class="btn" style="width: 100%; line-height: 45px;">00</button></div>
+								<div class=" span4" style="margin-left: 5px; padding: 0px; margin-top: 5px;"><button class="btn" style="width: 100%; line-height: 45px;">.</button></div>	
 							</div>
-							<div class="well span4" style="margin: 0px; padding: 0px; width: 210px">
-								<div class="well span5" style="margin: 0px; padding: 0px; margin-top: 5px; margin-left: 15px"><button class="btn" style="width: 100%; line-height: 40px">-</button></div>
-								<div class="well span5" style="margin: 0px; padding: 0px; margin-top: 5px; margin-left: 15px"><button class="btn" style="width: 100%; line-height: 40px;">-/+</button></div>
-								<div class="well span5" style="margin: 0px; padding: 0px; margin-top: 5px; margin-left: 15px"><button class="btn" style="width: 100%; line-height: 40px;">*</button></div>
-								<div class="well span5" style="margin: 0px; padding: 0px; margin-top: 5px; margin-left: 15px"><button class="btn" style="width: 100%; line-height: 40px;">/</button></div>		
-								<div class="well span5" style="margin: 0px; padding: 0px; margin-top: 5px; margin-left: 15px"><button class="btn" style="width: 100%; line-height: 90px;">+</button></div>
-								<div class="well span5" style="margin: 0px; padding: 0px; margin-top: 5px; margin-left: 15px"><button class="btn" style="width: 100%; line-height: 90px;">=</button></div>
+							<div class="span4" style="margin: 0px; padding: 0px; width: 210px">
+								<div class="span6" style="margin: 0px; padding: 0px; margin-top: 5px; margin-left: 0px"><button class="btn" style="width: 100%; line-height: 45px">-</button></div>
+								<div class="span6" style="margin: 0px; padding: 0px; margin-top: 5px; margin-left: 4px"><button class="btn" style="width: 100%; line-height: 45px;">-/+</button></div>
+								<div class="span6" style="margin: 0px; padding: 0px; margin-top: 5px; margin-left: 0px"><button class="btn" style="width: 100%; line-height: 45px;">*</button></div>
+								<div class="span6" style="margin: 0px; padding: 0px; margin-top: 5px; margin-left: 4px"><button class="btn" style="width: 100%; line-height: 45px;">/</button></div>		
+								<div class="span6" style="margin: 0px; padding: 0px; margin-top: 5px; margin-left: 0px"><button class="btn" style="width: 100%; line-height: 105px;">+</button></div>
+								<div class="span6" style="margin: 0px; padding: 0px; margin-top: 5px; margin-left: 4px"><button class="btn" style="width: 100%; line-height: 105px;">=</button></div>
 							</div>				
 							
 					</div>
@@ -137,7 +138,7 @@ Yii::app()->clientScript->registerScriptFile(
 			
 		</div>
 
-		<footer class="footer" style="background-color:#ffffff; margin-top: 250px; padding: 0px">
+		<footer class="footer" style="background-color:#ffffff; margin-top: 20%; padding: 0px">
 		    <div class="container" style="margin:0 auto;">
 		       <!--  <div class="row">
 		            <div class="well span2 offset1" style="font-size: 10px">
@@ -168,7 +169,7 @@ Yii::app()->clientScript->registerScriptFile(
 		            </div>
 		         </div> -->
 		        <div class="well navbar span12 " style="margin: 0px; padding: 0px">
-		        	<h6 style="margin-left: 40%"> © Diletant club 2012 </h6>
+		        	<h6 style="margin-left: 25%">Copyright &copy; somewhen by Diletant club. All Rights Reserved. Powered by Yii Framework. </h6>
 		        </div>
 		    </div>
 		</footer>
