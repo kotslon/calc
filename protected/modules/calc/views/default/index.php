@@ -5,7 +5,6 @@ Yii::app()->clientScript->registerCssFile(
 		Yii::app()->baseUrl.'/css/bootstrap.css'
 );
 
-
 Yii::app()->clientScript->registerScriptFile(
 		   Yii::app()->baseUrl.'/js/jquery.js'
 		);
@@ -16,16 +15,18 @@ Yii::app()->clientScript->registerScriptFile(
 Yii::app()->clientScript->registerScriptFile(
 		Yii::app()->baseUrl.'/js/bootstrap.js'
 );
+
 ?>
 
-<h1>Calc here.</h1>
 <button type="button" onclick="helloDiletant();">Hello?</button>
+<button type="button" onclick="calc.loadHistory();">Load history</button>
+<button type="button" onclick="calc.addToHistory();">Add to history</button>
 <br/><br/><br/>
 
 	<script src="js/bootstrap.js"></script>
 	
 	
-	<div class="navbar span12 offset2" >
+	<div class="navbar span12" >
 		<div class="navbar-inner">
 			<div class="nav-collapse">
 				<a class="brand" href="#">Calculator</a>
@@ -42,7 +43,7 @@ Yii::app()->clientScript->registerScriptFile(
 
 <!--  style="padding-left:130px"-->
 
-	<div class="conteiner span12 offset2" >
+	<div class="conteiner span12" >
 		<div class="row-fluid" style="margin: 0px; padding: 0px" >
 			<div class="span8 " style="margin: 0px; padding: 0px">
 				<div class="input-append" style="margin: 0px; padding: 0px">
@@ -168,7 +169,7 @@ Yii::app()->clientScript->registerScriptFile(
 		            </div>
 		         </div> -->
 		        <div class="well navbar span12 " style="margin: 0px; padding: 0px">
-		        	<h6 style="margin-left: 40%"> © Diletant club 2012 </h6>
+		        	<h6 style="margin-left: 40%"> ï¿½ Diletant club 2012 </h6>
 		        </div>
 		    </div>
 		</footer>
