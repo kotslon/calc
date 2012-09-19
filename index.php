@@ -6,8 +6,8 @@ $local_yii=dirname(__FILE__).DIRECTORY_SEPARATOR.'yii_path.php';
 if (file_exists($local_yii)) {
 	require_once($local_yii);
 } else {
-	$yii=dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR
-		 .'framework'.DIRECTORY_SEPARATOR.'yii.php';
+	$yii=dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'yii'
+		 .DIRECTORY_SEPARATOR.'framework'.DIRECTORY_SEPARATOR.'yii.php';
 }
 // local.php is ignored by VCS
 $local_config=dirname(__FILE__).DIRECTORY_SEPARATOR.'protected'
