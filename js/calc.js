@@ -1,9 +1,7 @@
-function helloDiletant () {
-	alert("Hello, diletant!");
-}
 
 function Calc () {
-	var  history;
+	var history = [];
+	var lastCalc = "4-1=3";
 }
 
 Calc.prototype.showHistory = function () {
@@ -22,7 +20,14 @@ Calc.prototype.loadHistory = function () {
 }
 
 Calc.prototype.addToHistory = function () {
-	var newCalc = prompt('add to history');
+	$.ajax({
+		url:"index.php?r=calc/history/add",
+		context: this,
+		success: function (result) {
+			console.log(result);
+			this.loadHistory();
+		},
+	});
 }
 
 var calc = new Calc();

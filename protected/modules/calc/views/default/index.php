@@ -18,7 +18,6 @@ Yii::app()->clientScript->registerScriptFile(
 
 ?>
 
-<button type="button" onclick="helloDiletant();">Hello?</button>
 <button type="button" onclick="calc.loadHistory();">Load history</button>
 <button type="button" onclick="calc.addToHistory();">Add to history</button>
 <br/><br/><br/>
