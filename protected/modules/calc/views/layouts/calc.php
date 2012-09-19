@@ -21,7 +21,7 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; somewhen by My Company.<br/>
+		Copyright &copy; somewhen by Diletant club.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->

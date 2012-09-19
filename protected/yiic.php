@@ -10,7 +10,7 @@ if (file_exists($local_yii)) {
 	require_once($local_yii);
 } else {
 	$yiic=dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR
-	     .'..'.DIRECTORY_SEPARATOR
+	     .'..'.DIRECTORY_SEPARATOR.'yii'.DIRECTORY_SEPARATOR
 	     .'framework'.DIRECTORY_SEPARATOR.'yiic.php';
 }
 // local_console.php is ignored by VCS
