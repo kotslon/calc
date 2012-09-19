@@ -6,7 +6,9 @@ Yii::app()->clientScript->registerScriptFile(
 Yii::app()->clientScript->registerScriptFile(
 		   Yii::app()->baseUrl.'/js/calc.js'
 		);
-
+Yii::app()->clientScript->registerCssFile(
+		Yii::app()->baseUrl.'/css/main.css'
+);
 ?>
 
 <h1>Calc here.</h1>
