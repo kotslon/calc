@@ -31,3 +31,8 @@ Calc.prototype.addToHistory = function () {
 }
 
 var calc = new Calc();
+
+function calcPress(x)
+{
+	 alert(x);	 
+}

@@ -10,21 +10,21 @@
 
 <body>
 
-<div class="container" id="page">
-
+<div class="container" id="page" style="background-color: #f9f9f9; padding: 20px">
+<!--
 	<div id="header">
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
+	</div> header -->
 
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
 
-	<div id="footer">
+<!--	<div id="footer">
 		Copyright &copy; somewhen by Diletant club.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
+	</div> footer -->
 
 </div><!-- page -->
 
