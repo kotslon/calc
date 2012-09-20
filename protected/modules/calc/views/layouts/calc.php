@@ -16,6 +16,23 @@
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
 	</div> header -->
 
+	<div class="navbar span12 offset2" style="margin: 0px; margin-top: 0px; padding: 0px" >
+		<div class="navbar-inner">
+			<div class="nav-collapse">
+				<a class="brand" href="#">Calculator</a>
+				<ul class="nav nav-pills pull-right" >
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>	
+	
+	
+	
+	
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
