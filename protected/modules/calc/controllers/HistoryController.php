@@ -6,10 +6,7 @@ class HistoryController extends Controller
 	{
 		header('Content-type: application/json');
 		
-		$history = array(
-					'5+4=9',
-					'6*8=48',
-				);
+		$history = array('5+4=9', '6*8=48');
 		
 		echo CJSON::encode($history);
 		
