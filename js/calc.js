@@ -30,9 +30,19 @@ Calc.prototype.addToHistory = function () {
 	});
 }
 
+
+Calc.prototype.pressButton = function (x) {
+	
+		alert(x);
+}
+
 var calc = new Calc();
 
+
+
+/*
 function calcPress(x)
 {
 	 alert(x);	 
 }
+*/
