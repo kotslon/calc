@@ -14,8 +14,8 @@ class m120918_104241_create_history_table extends CDbMigration
 	public function down()
 	{
 		//echo "m120918_104241_create_history_table does not support migration down.\n";
+		//return false;
 		$this->dropTable('dcc_history');
-		return false;
 	}
 
 	/*
