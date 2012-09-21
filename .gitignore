@@ -25,9 +25,10 @@ nb-configuration.xml
 .pydevproject
 
 # Yii Framework
-assets/
-protected/runtime/
-themes/classic/views/
+assets/*
+protected/runtime/*
+themes/classic/views/*
+!.gitignore
 
 #local settings files
 protected/config/local.php
