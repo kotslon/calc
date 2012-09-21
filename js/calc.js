@@ -21,7 +21,7 @@ Calc.prototype.loadHistory = function () {
 
 Calc.prototype.addToHistory = function () {
 	$.ajax({
-		url:"index.php?r=calc/history/add",
+		url:"index.php?r=calc/history/add&e="+prompt("Expression?"),
 		context: this,
 		success: function (result) {
 			console.log(result);

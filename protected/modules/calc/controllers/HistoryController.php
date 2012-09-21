@@ -3,24 +3,34 @@
 class HistoryController extends Controller
 {
 	public function actionIndex()
-	{
+	{		
+		$hist = new History;
+		//$history = array('5+4=9', '6*8=48');
+		$criteria = new CDbCriteria;
+		$criteria->mergeWith(array(
+    		'limit'=>20,
+			'order'=>'calc_date',
+		));
+		
+		$history = History::model()->findAll();
+		
 		header('Content-type: application/json');
-		
-		$history = array('5+4=9', '6*8=48');
-		
 		echo CJSON::encode($history);
-		
 		Yii::app()->end();
 	}
 	
-	public function actionAdd()
+	public function actionAdd($e)
 	{
+		$expr = (string) $e;
+		
+		$hist = new History;
+		$hist->text = $expr;
+		$hist->calc_date = new CDbExpression('NOW()');
+		$hist->save();
+		
 		header('Content-type: application/json');
-		
-		$result = 'Ok';
-		
+		$result = $expr;
 		echo CJSON::encode($result);
-		
 		Yii::app()->end();
 	}
 }
