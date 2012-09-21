@@ -10,7 +10,7 @@
 
 <body>
 
-<div class="container" id="page" style="background-color: #f9f9f9; padding: 20px">
+<div class="container" id="page" style="background-color: #f9f9f9; padding: 20px; padding-top: 5px;">
 <!--
 	<div id="header">
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>

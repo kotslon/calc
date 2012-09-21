@@ -1,2 +1,13 @@
 @CHARSET "UTF-8";
 
+.calcBtn{
+	width: 90%;
+	line-height: 45px;
+	margin: 5px;
+	font-size: 14pt;
+}
+
+.bigBtn{
+	
+	line-height: 110px;
+}
