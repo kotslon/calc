@@ -24,7 +24,10 @@ Calc.prototype.loadHistory = function () {
 
 Calc.prototype.addToHistory = function () {
 	$.ajax({
-		url: this.history_add_link+"&e="+prompt("Expression?"),
+		url: this.history_add_link,
+		data: {e :prompt('Expression?')},
+		type: 'POST',
+		dataType: 'json',
 		context: this,
 		success: function (result) {
 			console.log(result);
@@ -32,7 +35,6 @@ Calc.prototype.addToHistory = function () {
 		},
 	});
 }
-
 
 Calc.prototype.pressButton = function (x) {
 	

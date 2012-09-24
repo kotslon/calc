@@ -7,6 +7,7 @@ class HistoryController extends Controller
             'ajaxOnly + index, add',
         );
     }
+    
 	public function actionIndex()
 	{		
 		$hist = new History;
@@ -24,9 +25,9 @@ class HistoryController extends Controller
 		Yii::app()->end();
 	}
 	
-	public function actionAdd($e)
+	public function actionAdd()
 	{
-		$expr = (string) $e;
+		$expr = (string) Yii::app()->getRequest()->getParam('e');
 		
 		$hist = new History;
 		$hist->text = $expr;
@@ -38,4 +39,5 @@ class HistoryController extends Controller
 		echo CJSON::encode($result);
 		Yii::app()->end();
 	}
+	
 }
