@@ -2,6 +2,11 @@
 
 class HistoryController extends Controller
 {
+    public function filters() {
+        return array(
+            'ajaxOnly + index, add',
+        );
+    }
 	public function actionIndex()
 	{		
 		$hist = new History;
