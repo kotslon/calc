@@ -1,24 +1,6 @@
 <?php
 /* @var $this DefaultController */
 
-Yii::app()->clientScript->registerCssFile(
-		Yii::app()->baseUrl.'/css/bootstrap.css'
-);
-
-Yii::app()->clientScript->registerCssFile(
-		Yii::app()->baseUrl.'/css/calc.css'
-);
-
-Yii::app()->clientScript->registerScriptFile(
-		   Yii::app()->baseUrl.'/js/jquery.js'
-		);
-Yii::app()->clientScript->registerScriptFile(
-		   Yii::app()->baseUrl.'/js/calc.js'
-		);
-
-Yii::app()->clientScript->registerScriptFile(
-		Yii::app()->baseUrl.'/js/bootstrap.js'
-);
 
 ?>
 <script>
