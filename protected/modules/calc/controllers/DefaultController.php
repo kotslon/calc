@@ -3,8 +3,6 @@
 class DefaultController extends Controller
 {
 	public $layout = 'calc';
-	public $history_get_link = 'index.php?r=calc/history';
-	public $history_add_link = 'index.php?r=calc/history/add';
 
 	public function actionIndex()
 	{
