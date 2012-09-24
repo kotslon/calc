@@ -10,7 +10,7 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # Netbeans IDE
-nbproject/private/
+nbproject/
 build/
 nbbuild/
 dist/
@@ -24,11 +24,17 @@ nb-configuration.xml
 .buildpath
 .pydevproject
 
+# PhPStorm IDE
+.idea/
+
 # Yii Framework
 assets/*
 protected/runtime/*
 themes/classic/views/*
 !.gitignore
+
+# SQLite database
+protected/data/*.db
 
 #local settings files
 protected/config/local.php
