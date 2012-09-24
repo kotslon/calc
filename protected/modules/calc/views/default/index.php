@@ -32,23 +32,23 @@ Yii::app()->clientScript->registerScriptFile(
 			<button class="btn btn-warning" type="button" id="ButtonTwit" onClick="calc.pressButton('Twitter')">Twitter</button>
 		</div>	
 		<div class="row">
-			<div class="span2"><button class="btn btn-info calcBtn" id="ButtonC" onClick="calc.pressButton('ButtonC')">C</button></div>
-			<div class="span4"><img src="images\logo_DC.png" class="img-rounded"></div>
-			<div class="span2"><button class="btn btn-info calcBtn" id="ButtonBcsp" onClick="calc.pressButton('ButtonBcsp')">Bck</button></div>
+			<div class="span2"><button class="btn calcBtn" id="ButtonC" onClick="calc.pressButton('ButtonC')">C</button></div>
+			<div class="span4"><h5 style="text-align: center">Diletant Club<br/> web development by newbies</h5></div>
+			<div class="span2"><button class="btn calcBtn" id="ButtonBcsp" onClick="calc.pressButton('ButtonBcsp')">Bck</button></div>
 		</div>										
 		<div class="row">
 			<div class="span2"><button class="btn calcBtn" id="Button7" onClick="calc.pressButton('Button7')">7</button></div>
 			<div class="span2"><button class="btn calcBtn" id="Button8" onClick="calc.pressButton('Button8')">8</button></div>
 			<div class="span2"><button class="btn calcBtn" id="Button9" onClick="calc.pressButton('Button9')">9</button></div>
-			<div class="span1"><button class="btn btn-info calcBtn" id="ButtonMinus" onClick="calc.pressButton('ButtonMinus')">-</button></div>
-			<div class="span1"><button class="btn btn-info calcBtn" id="ButtonNeg" onClick="calc.pressButton('ButtonNeg')">-/+</button></div>
+			<div class="span1"><button class="btn calcBtn" id="ButtonMinus" onClick="calc.pressButton('ButtonMinus')">-</button></div>
+			<div class="span1"><button class="btn calcBtn" id="ButtonNeg" onClick="calc.pressButton('ButtonNeg')">-/+</button></div>
 		</div>									
 		<div class ="row">				
 			<div class="span2"><button class="btn calcBtn" id="Button4" onClick="calc.pressButton('Button4')" >4</button></div>
 			<div class="span2"><button class="btn calcBtn" id="Button5" onClick="calc.pressButton('Button5')" >5</button></div>
 			<div class="span2"><button class="btn calcBtn" id="Button6" onClick="calc.pressButton('Button6')" >6</button></div>
-			<div class="span1"><button class="btn btn-info calcBtn" id="ButtonMul" onClick="calc.pressButton('ButtonMul')">*</button></div>
-			<div class="span1"><button class="btn btn-info calcBtn" id="ButtonDiv" onClick="calc.pressButton('ButtonDiv')">/</button></div>
+			<div class="span1"><button class="btn calcBtn" id="ButtonMul" onClick="calc.pressButton('ButtonMul')">*</button></div>
+			<div class="span1"><button class="btn calcBtn" id="ButtonDiv" onClick="calc.pressButton('ButtonDiv')">/</button></div>
 		</div>			
 		<div class="row">	
 			<div class="span6">				
@@ -65,8 +65,8 @@ Yii::app()->clientScript->registerScriptFile(
 			</div>				
 			<div class="span2">
 				<div class="row">	
-					<div class="span1"><button class="btn btn-info calcBtn bigBtn" id="ButtonPlus" onClick="calc.pressButton('ButtonPlus')">+</button></div>
-					<div class="span1"><button class="btn btn-info calcBtn bigBtn" id="ButtonEq" onClick="calc.pressButton('ButtonEq')">=</button></div>
+					<div class="span1"><button class="btn calcBtn bigBtn" id="ButtonPlus" onClick="calc.pressButton('ButtonPlus')">+</button></div>
+					<div class="span1"><button class="btn calcBtn bigBtn" id="ButtonEq" onClick="calc.pressButton('ButtonEq')">=</button></div>
 				</div>
 			</div>
 		</div>								
