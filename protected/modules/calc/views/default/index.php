@@ -21,6 +21,10 @@ Yii::app()->clientScript->registerScriptFile(
 );
 
 ?>
+<script>
+var calc = new Calc('<?php echo $this->history_get_link; ?>',
+					'<?php echo $this->history_add_link; ?>');
+</script>
 
 <script src="js/bootstrap.js"></script>
 <!--  style="padding-left:130px"-->
