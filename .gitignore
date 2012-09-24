@@ -1,10 +1,37 @@
+# Windows OS
+## Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+## Folder config file
+Desktop.ini
+
+## Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Netbeans IDE
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
 #ignore Eclipse IDE settings
 .settings/
 .project
 .buildpath
 .pydevproject
 
+# Yii Framework
+assets/*
+protected/runtime/*
+themes/classic/views/*
+!.gitignore
+
 #local settings files
 protected/config/local.php
 protected/config/local_console.php
 yii_path.php
+
