@@ -75,11 +75,11 @@ var calc = new Calc('<?php echo $this->history_get_link; ?>',
 			</div>
 		</div>								
 	</div>
-	<div class="span4">
-		<div class="input-append">
-			<div><h5 style="text-align: center">HISTORY</h5></div>
-			<textarea class="span4" rows="14" readonly style="background-color: #ffffff; resize: none"></textarea>
-		</div>
+	<div class="span4" id="historyArea">
+		<h5 style="text-align: center">HISTORY</h5></div>
+			<!-- <textarea id="historyArea" class="span4" rows="14" readonly style="background-color: #ffffff; resize: none"></textarea>
+			 -->
+			
 	</div>
 </div>			
 	

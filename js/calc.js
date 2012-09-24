@@ -8,6 +8,12 @@ function Calc (hgl, hal) {
 
 Calc.prototype.showHistory = function () {
 	console.log(history);
+	var his  = '<h5 style="text-align: center">HISTORY</h5></div>';
+	for (h in history) {
+		his += history[h].text + '<br />'; 
+	}
+	$('#historyArea').html(his);
+	console.log(his);
 }
 
 Calc.prototype.loadHistory = function () {
