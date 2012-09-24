@@ -5,7 +5,7 @@ class DefaultController extends Controller
 	public $layout = 'calc';
 	public $history_get_link = 'index.php?r=calc/history';
 	public $history_add_link = 'index.php?r=calc/history/add';
-	
+
 	public function actionIndex()
 	{
 		$this->registerScripts();
@@ -14,11 +14,16 @@ class DefaultController extends Controller
 	
 	private function registerScripts()
 	{
-		$cs = Yii::app()->clientScript;
+		$cs = Yii::app()->getClientScript();
 		$cs->registerCssFile(Yii::app()->baseUrl.'/css/bootstrap.css');
 		$cs->registerCssFile(Yii::app()->baseUrl.'/css/calc.css');
 		$cs->registerCoreScript('jquery');
 		$cs->registerScriptFile(Yii::app()->baseUrl.'/js/calc.js', CClientScript::POS_END);
 		$cs->registerScriptFile(Yii::app()->baseUrl.'/js/bootstrap.js', CClientScript::POS_END);
+		$cs->registerScript(
+			'calc',
+			"var calc = new Calc('{$this->createAbsoluteUrl('calc/history/index')}','{$this->createAbsoluteUrl('calc/history/add')}');", 
+			CClientScript::POS_READY
+		);
 	}
 }
