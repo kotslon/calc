@@ -1,33 +1,4 @@
-<?php
-/* @var $this DefaultController */
-
-Yii::app()->clientScript->registerCssFile(
-		Yii::app()->baseUrl.'/css/bootstrap.css'
-);
-
-Yii::app()->clientScript->registerCssFile(
-		Yii::app()->baseUrl.'/css/calc.css'
-);
-
-Yii::app()->clientScript->registerScriptFile(
-		   Yii::app()->baseUrl.'/js/jquery.js'
-		);
-Yii::app()->clientScript->registerScriptFile(
-		   Yii::app()->baseUrl.'/js/calc.js'
-		);
-
-Yii::app()->clientScript->registerScriptFile(
-		Yii::app()->baseUrl.'/js/bootstrap.js'
-);
-
-?>
-<script>
-var calc = new Calc('<?php echo $this->history_get_link; ?>',
-					'<?php echo $this->history_add_link; ?>');
-</script>
-
-<script src="js/bootstrap.js"></script>
-<!--  style="padding-left:130px"-->
+<?php /* @var $this DefaultController */ ?>
 
 <div class="row">		
 	<div class="span8">
