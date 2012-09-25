@@ -43,10 +43,6 @@
 		        </div>
 		    </div>
 		</footer>
-<button type="button" onclick="calc.loadHistory();">Load history</button>
-<button type="button" onclick="calc.addToHistory();">Add to history</button>
-<button type="button" onclick="calc.showHistory();">Show history</button>
-<button type="button" onclick="calc.log();">Show calc</button>
 	
 <!--	<div id="footer">
 		Copyright &copy; somewhen by Diletant club.<br/>

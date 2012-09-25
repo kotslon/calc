@@ -14,11 +14,11 @@ class HistoryController extends Controller
 		//$history = array('5+4=9', '6*8=48');
 		$criteria = new CDbCriteria;
 		$criteria->mergeWith(array(
-    		'limit'=>20,
-			'order'=>'calc_date',
+    		'limit'=>15,
+			'order'=>'calc_date DESC',
 		));
 		
-		$history = History::model()->findAll();
+		$history = History::model()->findAll($criteria);
 		
 		header('Content-type: application/json');
 		echo CJSON::encode($history);

@@ -7,7 +7,7 @@
 			<button class="btn btn-warning" type="button" id="ButtonTwit" onClick="calc.pressButton('btnTwit')">Twitter</button>
 		</div>	-->
 		<div class="row">
-			<div class="span8" id="output"></div>
+			<div class="span8 calcOut" id="output"></div>
 		</div>	
 		<div class="row">
 			<div class="span2"><button class="btn btn-info calcBtn" id="ButtonC" onClick="calc.pressButton('btnC')">C</button></div>
