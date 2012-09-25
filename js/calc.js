@@ -46,3 +46,5 @@ Calc.prototype.pressButton = function (x) {
 	
 		alert(x);
 }
+
+var calc;

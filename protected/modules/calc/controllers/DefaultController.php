@@ -20,7 +20,7 @@ class DefaultController extends Controller
 		$cs->registerScriptFile(Yii::app()->baseUrl.'/js/bootstrap.js', CClientScript::POS_END);
 		$cs->registerScript(
 			'calc',
-			"var calc = new Calc('{$this->createAbsoluteUrl('calc/history/index')}','{$this->createAbsoluteUrl('calc/history/add')}');", 
+			"calc = new Calc('{$this->createAbsoluteUrl('history/index')}','{$this->createAbsoluteUrl('history/add')}');", 
 			CClientScript::POS_READY
 		);
 	}
