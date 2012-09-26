@@ -12,45 +12,26 @@
 
 <body>
 
-<div class="container" id="page" style="background-color: #f9f9f9; padding: 20px; padding-top: 5px;">
-<!--
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div> header -->
+<div class="container" style="background-color: #f9f9f9;">
 
-	<div class="navbar span12" style="width: 95%" >
+ 	<div class="navbar">
 		<div class="navbar-inner">
-			<a class="brand" href="#">Calculator DC</a>
+			<a class="brand" href="#">Diletants' calculator</a>
 				<ul class="nav nav-pills pull-right" >
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Help</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="http://blog.diletantclub.ru">Blog</a></li>
 				</ul>
 		</div>	
 	</div>	
-	
-	
-	
-	
+
 	<?php echo $content; ?>
 
-	<div class="clear"></div>
-		<footer class="footer" style="background-color:#ffffff; margin-top: 10%;">
-		    <div class="container" style="margin:0 auto;">
-		        <div class="well navbar span12 " style="margin: 0px; padding: 0px">
-			        <h6 style="margin-left: 25%">Copyright &copy; somewhen by Diletant club. All Rights Reserved. Powered by Yii Framework. </h6>
-		        </div>
-		    </div>
-		</footer>
-	
-<!--	<div id="footer">
-		Copyright &copy; somewhen by Diletant club.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-	</div> footer -->
+	<div class="row">
+	    <div class="span12">
+	        <h6 style="text-align: center">Copyright &copy; 2012 by Diletant club. All Rights Reserved. Powered by Yii Framework. </h6>
+	    </div>
+	</div>
 
-</div><!-- page -->
+</div>
 
 </body>
 </html>

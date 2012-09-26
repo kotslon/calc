@@ -2,16 +2,16 @@
 
 <div class="row">		
 	<div class="span8">
-<!-- 		<div class="input-append">
+		<!--<div class="input-append">
 			<input class="span7" readonly id="appendedInputButton" style="background-color: #ffffff"  type="text">
 			<button class="btn btn-warning" type="button" id="ButtonTwit" onClick="calc.pressButton('btnTwit')">Twitter</button>
-		</div>	-->
+		</div>-->
 		<div class="row">
 			<div class="span8 calcOut" id="output"></div>
 		</div>	
 		<div class="row">
 			<div class="span2"><button class="btn btn-info calcBtn" id="ButtonC" onClick="calc.pressButton('btnC')">C</button></div>
-			<div class="span4"><img src="images/logo_DC.png" class="img-rounded"></div>
+			<div class="span4"><img src="images/logo_DC.png"></div>
 			<div class="span2"><button class="btn btn-info calcBtn" id="ButtonBcsp" onClick="calc.pressButton('btnBcsp')">Bck</button></div>
 		</div>										
 		<div class="row">
@@ -49,11 +49,13 @@
 			</div>
 		</div>								
 	</div>
-	<div class="span4" id="historyArea">
-		<h5 style="text-align: center">HISTORY</h5></div>
-			<!-- <textarea id="historyArea" class="span4" rows="14" readonly style="background-color: #ffffff; resize: none"></textarea>
-			 -->
-			
+	<div class="span4">
+		<div class = "row">
+			<div class="span2 offset1"><h5 style="text-align: center">HISTORY</h5></div>
+		</div>
+		<div class = "row">
+			<div class="span4" id="historyArea">
+		</div>
 	</div>
 </div>			
 	

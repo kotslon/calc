@@ -78,7 +78,7 @@ function Calc(hgl,hal) {
 	}
 	
 	function showHistory() {
-		var his  = '<h5 style="text-align: center">HISTORY</h5></div>';
+		var his  = '';
 		for (h in history) {
 			his += history[h].text + '<br />'; 
 		}
