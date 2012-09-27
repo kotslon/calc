@@ -40,4 +40,4 @@ protected/data/*.db
 protected/config/local.php
 protected/config/local_console.php
 yii_path.php
-
+.htaccess
