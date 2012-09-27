@@ -18,7 +18,8 @@
 		<div class="navbar-inner">
 			<a class="brand" href="#">Diletants' calculator</a>
 				<ul class="nav nav-pills pull-right" >
-					<li><a href="http://blog.diletantclub.ru">Blog</a></li>
+					<li><a href="https://github.com/kotslon/calc">Repo on GitHub</a></li>
+					<li><a href="http://blog.diletantclub.ru">Diletant's Blog</a></li>
 				</ul>
 		</div>	
 	</div>	
