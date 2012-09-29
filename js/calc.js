@@ -97,7 +97,40 @@ function Calc(hgl,hal) {
 	var history_add_link = hal;
 	
 	function out(operand){
-		$('#output').html(operand.getString());
+		$('#output').val(operand.getString());		
+	}
+	
+	function showTwit(expr) {
+		var s='<a href="https://twitter.com/share" class="twitter-share-button" data-text="Я сосчитал ';
+		s+=expr;
+		s+=' в калькуляторе дилетантов!" data-size="large" data-count="none" data-hashtags="dc_calc">Tweet</a>';
+		$('#twit-in').html(s);
+
+		!function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (!d.getElementById(id)) {
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "//platform.twitter.com/widgets.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}
+		}(document, "script", "twitter-wjs");
+
+		$('#twit').show();
+		$('#output').removeClass('span8');
+		$('#output').addClass('span6');
+		$('#output').parent().removeClass('span8');
+		$('#output').parent().addClass('span6');
+	}
+	
+	function hideTwit() {
+		$('#twit').hide();
+		$('#twitter-wjs').remove();
+		$('#output').removeClass('span6');
+		$('#output').addClass('span8');
+		$('#output').parent().removeClass('span6');
+		$('#output').parent().addClass('span8');
+		$('#twit-in').html('');
 	}
 	
 	function reset() {
@@ -105,6 +138,7 @@ function Calc(hgl,hal) {
 		op2 = new Operand();
 		state = 'first_op';
 		out(op1);
+		hideTwit();
 	}
 	
 	function showHistory() {
@@ -165,6 +199,7 @@ function Calc(hgl,hal) {
 		LOG.s('res === '+res);
 		LOG.s('<<< '+res_s);
 		addToHistory(res_s);
+		showTwit(res_s);
 	}
 	
 	this.pressButton = function (btn) {
@@ -184,6 +219,7 @@ function Calc(hgl,hal) {
 			}
 		break;
 		case 'second':
+			hideTwit();
 			if ($.inArray(btn,BTNS_ED)>=0) { 
 				op2.edit(btn);
 				out(op2);
@@ -208,6 +244,7 @@ function Calc(hgl,hal) {
 			}
 		break;
 		case 'op_first':
+			hideTwit();
 			if ($.inArray(btn,BTNS_ED)>=0) {
 				op1=new Operand();
 				op1.edit(btn);

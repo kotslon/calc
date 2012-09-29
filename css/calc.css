@@ -1,23 +1,39 @@
 @CHARSET "UTF-8";
 
-.calcBtn{
-	width: 90%;
+.calcBtn {
+	width: 100%;
 	line-height: 45px;
 	margin: 5px;
 	font-size: 14pt;
 }
 
-.bigBtn{
+.bigBtn {
 	line-height: 110px;
 }
 
-.calcOut{
+.calcOut {
 	text-align: right;
 	font-size: 36pt;
 	margin-bottom: 20px;
 }
 
-#historyArea{
+#historyArea {
 	background-color: #ffffff; 
 	margin:10px;
+}
+
+#output {
+	text-align:right;
+	font-size: 26pt;
+	margin: 5px;
+	height: 45px;
+}
+
+#twit {
+	display: none;
+}
+
+#twit-in {
+	padding-top: 12px;
+	line-height: 31px;
 }

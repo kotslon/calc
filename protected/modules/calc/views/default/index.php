@@ -2,16 +2,26 @@
 
 <div class="row">		
 	<div class="span8">
-		<!--<div class="input-append">
-			<input class="span7" readonly id="appendedInputButton" style="background-color: #ffffff"  type="text">
-			<button class="btn btn-warning" type="button" id="ButtonTwit" onClick="calc.pressButton('btnTwit')">Twitter</button>
-		</div>-->
+		<!-- <div class="input-append">
+			<input class="span7" readonly id="appendedInputButton" style=" background-color: #ffffff"  type="text">
+			<button class="btn btn-warning" type="button" id="ButtonTwit" onClick="calc.pressButton('btnTwit')" style="display: none;">Twitter</button>
+		</div>
 		<div class="row">
 			<div class="span8 calcOut" id="output"></div>
-		</div>	
+		</div>
+		-->
+		<div class="row">
+			<div class="span2" id="twit"><div id="twit-in" class="btn btn-warning calcBtn">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="Я сосчитал" data-size="large" data-count="none" data-hashtags="dc_calc">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+			<!-- <button class="btn btn-warning calcBtn">twit</button>-->
+			</div>
+  			<div class="span8"><input class="span8" id="output" type="text" /></div>	
+		</div>
 		<div class="row">
 			<div class="span2"><button class="btn btn-info calcBtn" id="ButtonC" onClick="calc.pressButton('btnC')">C</button></div>
-			<div class="span4"><img src="images/logo_DC.png"></div>
+			<div class="span4"><img src="images/logo_DC.png" /></div>
 			<div class="span2"><button class="btn btn-info calcBtn" id="ButtonBcsp" onClick="calc.pressButton('btnBcsp')">Bck</button></div>
 		</div>										
 		<div class="row">
